@@ -1,22 +1,26 @@
+
+import java.io.IOException;
+
 class Taller1 {
-    public static void main(String[] args) {     
-        System.out.println("TEST DE CREAR ALUMNO\n");
+    public static void main(String[] args) throws IOException {     
+      //  System.out.println("TEST DE CREAR ALUMNO\n");
         Alumno a1 = new Alumno("Juan Perez", 10);
         Alumno a2 = new Alumno("Leire Peralta", 10);
         Alumno a3 = new Alumno("Maria Lorente", 10);
         Alumno a4 = new Alumno("Fabio Estrada", 10);
-        a1.mostrarInfo();
+      //  a1.mostrarInfo();
 
-        System.out.println("TEST DE CREAR PROFESOR\n");
-        Profesor p1 = new Profesor("Alan Turing");
+        // System.out.println("TEST DE CREAR PROFESOR\n");
+        Profesor p1 = new Profesor("Claude Shannon");
         Profesor p2 = new Profesor("Ada Lovelace");
-        Profesor p3 = new Profesor("Claude Shannon");
-        p1.mostrarInfo();
+        Profesor p3 = new Profesor("Alan Turing");
+      //  p1.mostrarInfo();
 
-        System.out.println("TEST DE CREAR ASIGNATURA\n");
+        // System.out.println("TEST DE CREAR ASIGNATURA\n");
         Asignatura asig1 = new Asignatura("Programacion Orientada a Objetos", 4, p1);
         Asignatura asig2 = new Asignatura("Introduccion a la Programacion", 4, p2);
         Asignatura asig3 = new Asignatura("Teoria de la Informacion", 4, p3);
+        asig1.gestion();
         a1.mostrarInfo();
 
         System.out.println("TEST DE ANIADIR A ASIGNATURA 1\n");
