@@ -170,7 +170,7 @@ public class Asignatura implements Informacion {
                 System.out.println("------------------------------------------------------------------------");
                 System.out.print(">> ");
                 opt = scn.nextInt();
-                scn.nextLine(); //<--- PARA QUE NO GENERE PROBLEMAS CON NEXTLINE SIGIENTE
+                scn.nextLine(); 
                 switch (opt) {
                     case 1:
                         mostrarInfo();
